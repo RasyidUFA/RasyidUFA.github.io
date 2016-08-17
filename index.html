@@ -181,7 +181,7 @@
 
 							<p>Mail me for more information and project, request and suggestion also accepted.</p>
 
-							<form method="post" action="#">
+							<form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbyvJDbANDrQfN1HTm3MhFtAwcqAMNUrS7zzqLdueJVRDsEU4YE/exec">
 								<div class="row">
 									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
 									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
@@ -189,10 +189,21 @@
 										<textarea name="message" placeholder="Message"></textarea>
 									</div>
 									<div class="12u$">
+									<font color=”#DD0000″>Verify</font>
+									<span id=”txtCaptchaDiv” style=”color:#fff”></span>
+									<input type=”hidden” id=”txtCaptcha” />
+									</label>
+									<input type=”text” name=”txtInput” id=”txtInput” size=”15″ />
+									</div>
+									<div class="12u$">
 										<input type="submit" value="Send Message" />
 									</div>
 								</div>
 							</form>
+							<div style="display:none;" id="thankyou_message">
+								<h2>Thanks!</h2>
+								Thank you for contacting me, I will get back to you soon!
+							</div>
 
 						</div>
 					</section>
@@ -217,6 +228,6 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/form.js"/></script>
 	</body>
 </html>
